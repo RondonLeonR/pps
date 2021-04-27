@@ -1,0 +1,7 @@
+{
+  "name": "controlGastos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

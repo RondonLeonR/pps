@@ -1,0 +1,8 @@
+{
+  "name": "RD",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+  
+}

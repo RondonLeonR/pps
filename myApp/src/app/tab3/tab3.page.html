@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab tres
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card [ngStyle]="{'background-color': color}">
+
+    <ion-card-header>Cambiar el color de fondo</ion-card-header>
+    
+    <ion-card-content > 
+      <ion-button block (click)="CambiarColor()">Cambiar Color</ion-button>
+    </ion-card-content>
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </ion-card>
+
+</ion-content>

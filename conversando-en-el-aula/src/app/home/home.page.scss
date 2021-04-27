@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  
+  color: #fff;
+}
+
+p{
+  font-size: 200%;
+  font-style: italic;
+  
+  font-family: Lato, serif;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Despertador por GPS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

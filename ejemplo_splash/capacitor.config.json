@@ -1,0 +1,9 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "controlGastos",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {},
+  "cordova": {}
+}

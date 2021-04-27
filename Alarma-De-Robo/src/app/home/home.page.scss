@@ -1,0 +1,59 @@
+ion-card{
+  *{
+    color: white;
+  }
+  ion-card-title{
+    margin-top: 20px;
+  }
+  //position: fixed;
+  border-radius: 10%;
+  top: 5%;
+  
+  width: auto;
+  height: 17em;
+
+  //align-items: center;
+  background-color: rgb(34, 33, 33);
+
+  .txtVerificacion{
+    font-size: 100%;
+    margin-left: 40%;
+  }
+}
+
+ion-grid{
+  ion-row{
+    //align-items: center;
+    margin-top: 50%;
+    margin-left: 25%;
+  }
+
+#btnStart, #btnStop{
+  //position: absolute;
+  
+  //margin-top: 60%;
+  //margin-left: 20%;
+  color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+
+
+#btnStart{
+  background-color: rgba(237, 7, 7, 0.733);
+  width: 13em;
+  height: 13em;
+
+}
+
+#btnStop{    
+  background-color: rgba(57, 240, 37, 0.733);  
+  width: 13em;
+  height: 13em;
+}
+.textInfo{
+  color: white;
+  font-size: 140%;
+}
+
+}
+

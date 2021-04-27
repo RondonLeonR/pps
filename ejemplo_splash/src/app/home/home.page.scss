@@ -1,0 +1,12 @@
+ion-content::part(scroll){
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffb347;
+}

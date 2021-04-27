@@ -1,0 +1,13 @@
+{
+  "appId": "com.despertadorPorGPS.app",
+  "appName": "Despertador por GPS",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2500
+    }
+  },
+  "cordova": {}
+}

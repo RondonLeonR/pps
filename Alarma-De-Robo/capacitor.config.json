@@ -1,0 +1,13 @@
+{
+  "appId": "com.alarmaDeRobo.app",
+  "appName": "Alarma De Robo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000
+    }
+  },
+  "cordova": {}
+}

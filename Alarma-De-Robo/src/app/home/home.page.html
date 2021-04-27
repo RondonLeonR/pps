@@ -1,0 +1,49 @@
+<ion-content padding>
+  <ion-card *ngIf="showDialog">
+    <ion-card-header>
+      <ion-card-title>Ingrese Clave para Parar</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item color="none">
+        <ion-input class="centrado" type='password' placeholder="Clave" [(ngModel)]="clave" name="password" required>
+        </ion-input>
+      </ion-item>
+      <!---Esperando clave-->
+      <!--<ion-icon *ngIf="estado==''" class="btnVerificacion" id="btnVerificar" name="key-outline"
+        (click)="btnActivarODesactivar()"></ion-icon>-->
+      <ion-label *ngIf="estado==''" class="txtVerificacion">Esperando clave!</ion-label>
+
+      <!---Clave correcta-->
+      <!--<ion-icon *ngIf="estado=='permitido'" class="btnVerificacion" id="btnSuccess" name="lock-open-outline"></ion-icon>-->
+      <ion-label *ngIf="estado=='permitido'" class="txtVerificacion">Clave correcta!</ion-label>
+      <!---Clave erronea-->
+      <!--<ion-icon *ngIf="estado=='denegado'" class="btnVerificacion" id="btnFail" name="lock-closed-outline"></ion-icon>-->
+      <ion-label *ngIf="estado=='denegado'" class="txtVerificacion">Clave equivocada!</ion-label>
+
+    </ion-card-content>
+
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-icon *ngIf="presionado" name="pause" id="btnStart" (click)="btnActivarODesactivar()"></ion-icon>
+        <br>
+        <ion-label class="textInfo" *ngIf="presionado">Alarma comenzada!!</ion-label>
+        <ion-icon *ngIf="!presionado" name="play-circle-outline" id="btnStop"
+          (click)="btnActivarODesactivar()"></ion-icon>
+          <br>
+        <ion-label class="textInfo" *ngIf="!presionado">Presione para Iniciar</ion-label>
+        <br>
+        <ion-label class="textInfo" >{{this.posicionActualCelular}}</ion-label>
+
+      </ion-col>
+    </ion-row>
+    <br>
+    <!--<ion-col>
+      <ion-col class="info" *ngIf="presionado" size="6" offset="3">
+        <p>Inclinacion : {{this.posicionActualCelular}} </p>
+        <p>X: {{accelerationX}} Y: {{accelerationY}} Z: {{accelerationZ}}</p>
+      </ion-col>
+    </ion-col>-->
+  </ion-grid>
+</ion-content>
