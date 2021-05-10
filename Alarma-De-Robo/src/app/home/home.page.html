@@ -1,7 +1,11 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+
 <ion-content padding>
   <ion-card *ngIf="showDialog">
     <ion-card-header>
-      <ion-card-title>Ingrese Clave para Parar</ion-card-title>
+      <ion-card-title style="font-family: 'Zen Dots', cursive;">Ingrese Clave para Parar</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-item color="none">
@@ -11,14 +15,14 @@
       <!---Esperando clave-->
       <!--<ion-icon *ngIf="estado==''" class="btnVerificacion" id="btnVerificar" name="key-outline"
         (click)="btnActivarODesactivar()"></ion-icon>-->
-      <ion-label *ngIf="estado==''" class="txtVerificacion">Esperando clave!</ion-label>
+      <ion-label *ngIf="estado==''" class="txtVerificacion" style="font-family: 'Zen Dots', cursive;">Esperando clave!</ion-label>
 
       <!---Clave correcta-->
       <!--<ion-icon *ngIf="estado=='permitido'" class="btnVerificacion" id="btnSuccess" name="lock-open-outline"></ion-icon>-->
-      <ion-label *ngIf="estado=='permitido'" class="txtVerificacion">Clave correcta!</ion-label>
+      <ion-label *ngIf="estado=='permitido'" class="txtVerificacion" style="font-family: 'Zen Dots', cursive;">Clave correcta!</ion-label>
       <!---Clave erronea-->
       <!--<ion-icon *ngIf="estado=='denegado'" class="btnVerificacion" id="btnFail" name="lock-closed-outline"></ion-icon>-->
-      <ion-label *ngIf="estado=='denegado'" class="txtVerificacion">Clave equivocada!</ion-label>
+      <ion-label *ngIf="estado=='denegado'" class="txtVerificacion" style="font-family: 'Zen Dots', cursive;">Clave equivocada!</ion-label>
 
     </ion-card-content>
 
@@ -28,13 +32,13 @@
       <ion-col size="12">
         <ion-icon *ngIf="presionado" name="pause" id="btnStart" (click)="btnActivarODesactivar()"></ion-icon>
         <br>
-        <ion-label class="textInfo" *ngIf="presionado">Alarma comenzada!!</ion-label>
+        <ion-label class="textInfo" *ngIf="presionado" style="font-family: 'Zen Dots', cursive;">Alarma comenzada!!</ion-label>
         <ion-icon *ngIf="!presionado" name="play-circle-outline" id="btnStop"
           (click)="btnActivarODesactivar()"></ion-icon>
           <br>
-        <ion-label class="textInfo" *ngIf="!presionado">Presione para Iniciar</ion-label>
+        <ion-label class="textInfo" *ngIf="!presionado" style="font-family: 'Zen Dots', cursive;">Presione para Iniciar</ion-label>
         <br>
-        <ion-label class="textInfo" >{{this.posicionActualCelular}}</ion-label>
+        <ion-label class="textInfo" style="margin-left: 85px;">{{this.posicionActualCelular}}</ion-label>
 
       </ion-col>
     </ion-row>

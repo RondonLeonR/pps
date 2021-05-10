@@ -22,39 +22,13 @@
 	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   
+  /////////
+  @-webkit-keyframes swirl-out-top-fwd{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0;opacity:1}100%{-webkit-transform:rotate(540deg) scale(5);transform:rotate(540deg) scale(5);-webkit-transform-origin:50% 0;transform-origin:50% 0;opacity:0}}@keyframes swirl-out-top-fwd{0%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0;opacity:1}100%{-webkit-transform:rotate(540deg) scale(5);transform:rotate(540deg) scale(5);-webkit-transform-origin:50% 0;transform-origin:50% 0;opacity:0}}
 
   .img{
-    -webkit-animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
-    animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+    -webkit-animation: swirl-out-top-fwd 0.65s ease-in 2.5s both;
+	        animation: swirl-out-top-fwd 0.65s ease-in 2.5s both;
   }
-
-///ANIMACION IMG
-@-webkit-keyframes scale-out-vertical {
-    0% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-out-vertical {
-    0% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      opacity: 1;
-    }
-  }
-  
-
 
 
 ///ANIMACION LETRAS

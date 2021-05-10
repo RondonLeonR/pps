@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  styleUrls: ['../login/login.page.scss'],
 })
 export class RegisterPage implements OnInit {
 
@@ -46,12 +46,12 @@ export class RegisterPage implements OnInit {
 
   public errorMessages = {
     email: [
-      { type: 'required', message: 'Email is required' },
-      { type: 'pattern', message: 'Please enter a valid email' }
+      { type: 'required', message: 'Correo Obligatorio' },
+      { type: 'pattern', message: 'Por favor ingrese un correo valido' }
     ],
     password: [
-      { type: 'required', message: 'Password is required' },
-      { type: 'pattern', message: 'Please enter a valid password' }
+      { type: 'required', message: 'Clave invalida' },
+      { type: 'pattern', message: 'Por favor ingrese una clave valida' }
     ]
   }
 

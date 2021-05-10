@@ -1,33 +1,16 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<ion-fab vertical="top" horizontal="start" slot="fixed" routerLink="/login">
+  <ion-fab-button color="danger">
+    <ion-icon name="chevron-back-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 <ion-content>
-  <div class="container">
-    <br>
-    <div Class="btnImg" (click)="btnLindas()">
-      <img [src]="imgLinda" scroll="true" width="auto">
-    </div>
-    <h3 align="center">Seleccione Album?</h3>
-    <div Class="btnImg" (click)="btnFeas()">
-      <img [src]="imgFea" scroll="true" width="auto">
-    </div>
-  </div>
-
+  <ion-card class="boton cosasLindas" (click)="redireccionar('cosasLindas')">
+    <p class="texto">Cosas Lindas</p>
+  </ion-card>
+  <ion-card class="boton cosasFeas" (click)="redireccionar('cosasFeas')">
+    <p class="texto">Cosas Feas</p>
+  </ion-card>
 </ion-content>
-<!--
-<ion-header [translucent]="true">
-
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <div id="cosasLindas">
-    <label>
-      Lindas
-    </label>
-  </div>
-  <div id="cosasFeas">
-    <label>
-      Feas
-    </label>
-  </div>
-  <img id="imgNuevo" src="../../assets/Fotos/lindo.jpg" alt="casa nueva" (click)="btnLindas()">
-  <img id="imgViejo" src="../../assets/Fotos/fea.jpg" alt="casa vieja" (click)="btnFeas()">
-</ion-content>
--->

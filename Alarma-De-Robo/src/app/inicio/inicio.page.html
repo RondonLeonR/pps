@@ -1,19 +1,16 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
 <ion-content>
-  <div id="header">
-    <h2 class="had-r1">Alarma de Robo</h2>
-    <img class="imgLogo" src="../../assets/icon3.png">
-    
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1 style="margin-left: 90px;">Alarma</h1>
+      <h1 style="margin-left: 70px;">de Robo</h1>
+      <img class="imgLogo" src="../../assets/icon3.png">
+    </div>
+    <div class="action-buttons ion-padding">
+      <ion-button type="submit" size="large" class="login-button" shape="round" (click)="onIntro()">Ingresar
+      </ion-button>
+    </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <ion-button class="btnLogin" expand="block" shape="round" (click)="onIntro()">Ingreso</ion-button>
-  <br>
-  <ion-button class="btnSignIn" expand="block" shape="round" (click)="onRegister()">Registro</ion-button>
-  
 </ion-content>

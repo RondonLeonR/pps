@@ -2,19 +2,18 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
 
 <ion-content>
-  <div id="header">
-    <h2 class="had-r1">Despertador de GPS</h2>
-    <img class="imgLogo" src="../../assets/iconDespertador.png">
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1 style="margin-left: 40px;">DESPERTADOR</h1>
+      <h1 style="margin-left: 90px;">DE GPS</h1>
+      <img class="imgLogo" src="../../assets/iconDespertador.png">
+    </div>
 
-  <ion-button class="btnLogin" expand="block" shape="round" (click)="onIntro()">Login</ion-button>
-  <br>
-  <ion-button class="btnSignIn" expand="block" shape="round" (click)="onRegister()">Sign in</ion-button>
-  <br>
-  <br>
-  <ion-button class="btnFast" expand="block" shape="round" (click)="onLoginFast()">Fast Login</ion-button>
+
+    <ion-fab vertical="center" slot="fixed" routerLink="/login">
+      <ion-fab-button style="margin-left: 140px;margin-top: 190px;width: 100px; height: 100px;" color="danger">
+        Ingresar
+      </ion-fab-button>
+    </ion-fab>
+  </div>
 </ion-content>

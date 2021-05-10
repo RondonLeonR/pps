@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -6,18 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(
+    private router: Router,
+    private auth: AuthService
+  ) {}
 
-  imgLinda = "../../assets/Fotos/lindo2.jpg";
-  imgFea = "../../assets/Fotos/fea.jpg";
-
-
-  constructor() {}
-
-  btnLindas(){
-    console.log("Cosas Lindas");
-  }
-
-  btnFeas(){
-    console.log("Cosas Feas");
+  redireccionar(event){
+    this.auth.currentUser.galery = event;
+    this.router.navigateByUrl('app-main');
+    console.log(this.auth.currentUser);
   }
 }

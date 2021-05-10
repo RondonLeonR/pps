@@ -8,108 +8,29 @@
   color: #fff;
 }
 
+
+////ANIMATION TEXT
+@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 p{
-    font-size: x-large;
-    font-family: Lato, serif;
+  font-size: 35px;
+  font-family: 'New Tegomin', serif;
 
-  //font:  oblique bold 150% arial;
-    -webkit-animation:fade-out 1s ease-out 2s both;
-            animation:fade-out 1s ease-out 2s both;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: scale-out-center 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-
-
-
-//Entrada tracking
-@-webkit-keyframes tracking-in-expand-fwd-bottom {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px) translateY(500px);
-            transform: translateZ(-700px) translateY(500px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand-fwd-bottom {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px) translateY(500px);
-            transform: translateZ(-700px) translateY(500px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    opacity: 1;
-  }
-}
-
-
-
-///ANIMACION FADE OUT (SALIDA)
-@-webkit-keyframes fade-out{
-  0% { opacity:1}
-  100%{opacity:0}
-}
-@keyframes fade-out{
-  0%{opacity:1}
-  100%{opacity:0}
-}
-
-
-
-///ANIMACION IMAGEN ROTACION
-@-webkit-keyframes rotate-out-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-    opacity: 0;
-  }
-}
-@keyframes rotate-out-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-    opacity: 0;
-  }
-}
-
-
+///////ANIMATION IMAGE
+@-webkit-keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}@keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}
+@-webkit-keyframes rotate-in-diag-1{0%{-webkit-transform:rotate3d(1,1,0,-360deg);transform:rotate3d(1,1,0,-360deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}}@keyframes rotate-in-diag-1{0%{-webkit-transform:rotate3d(1,1,0,-360deg);transform:rotate3d(1,1,0,-360deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}}
 .img{
+  -webkit-animation: rotate-in-diag-1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-in-diag-1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
-  -webkit-animation: rotate-out-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
-	        animation: rotate-out-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1.5s both;
+  -webkit-animation: scale-out-center 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 3.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-
-
-.animacionInicial
-{
-  -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-
-
 
 
 

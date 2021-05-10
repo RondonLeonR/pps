@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Plugins } from '@capacitor/core';
 import { Platform } from '@ionic/angular';
@@ -23,8 +23,11 @@ export class AppComponent {
     this.platform.ready().then(() =>{
       setTimeout(() => {
         SplashScreen.hide();
-        this.router.navigateByUrl('splash');
       }, 500);
     });
+  }
+
+  ngOnInit(){
+    this.router.navigate(["/splash"],{replaceUrl: true});
   }
 }

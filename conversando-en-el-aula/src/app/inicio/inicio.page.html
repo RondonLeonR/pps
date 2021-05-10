@@ -1,21 +1,15 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
 <ion-content>
-  <div id="header">
-    <h2 class="had-r1">Conversando en el Aula</h2>
-    <img class="imgLogo" src="../../assets/splashnew.png">
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1 style="margin-left: 70px;">Conversando</h1>
+      <h1 style="margin-left: 70px;">En El Aula</h1>
+      <img class="imgLogo" src="../../assets/splashnew.png">
+    </div>
+    <br>
+  
+    <ion-button style="font-family: 'Josefin Sans', sans-serif;" size="large" class="login-button" expand="block" shape="round" (click)="onIntro()">Ingreso</ion-button>
+    <br>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <ion-button class="btnLogin" expand="block" shape="round" (click)="onIntro()">Login</ion-button>
-  <br>
-  <ion-button class="btnSignIn" expand="block" shape="round" (click)="onRegister()">Sign in</ion-button>
-  <br>
-  <br>
-  <ion-button class="btnFast" expand="block" shape="round" (click)="onLoginFast()">Fast Login</ion-button>
-
 </ion-content>

@@ -8,94 +8,23 @@
     color: #fff;
   }
   
+
+
+  ////////TEXT ANIMATION
+  @-webkit-keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
   p{
     font-size: 170%;
-    font-style: italic;
-    ///salida
-    -webkit-animation:fade-out 1s ease-out 2s both;
-            animation:fade-out 1s ease-out 2s both;
-  }
+    font-family: 'Zen Dots', cursive;
+    -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  } 
 
-
-  .animacionInicial{
-    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-  
-
+  ///ANIMACION IMG
+  @-webkit-keyframes slide-out-top{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}}@keyframes slide-out-top{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}}
   .img{
-    -webkit-animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
-    animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+    -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+	        animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
   }
-
-///ANIMACION IMG
-@-webkit-keyframes scale-out-vertical {
-    0% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-out-vertical {
-    0% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      opacity: 1;
-    }
-  }
-  
-
-
-
-///ANIMACION LETRAS
-@-webkit-keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-
-///ANIMACION FADE OUT (SALIDA)
-@-webkit-keyframes fade-out{
-    0% { opacity:1}
-    100%{opacity:0}
-  }
-  @keyframes fade-out{
-    0%{opacity:1}
-    100%{opacity:0}
-  }
-  
 
 
 ///SPINNER

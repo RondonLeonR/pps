@@ -1,18 +1,18 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 
 <ion-content>
-  <div id="header">
-    <h2 class="had-r1">Relevamiento Visual</h2>
-    <img class="imgLogo" src="../../assets/iconApp.png">
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1 style="color: white;margin-left: 105px; font-size: 50px;">Tabla</h1>
+      <h1 style="color: white;margin-left: 65px; font-size: 50px;">Didáctica</h1>
+    </div>
+    <ion-fab vertical="center" slot="fixed" routerLink="/login">
+      <ion-fab-button style="margin-left: 90px;width: 200px; height: 200px;" color="primary">
+        <img class="imgLogo" src="../../assets/iconAppDos.png" title="Ingreso">
+        
+      </ion-fab-button>
+      <p style="color: white;font-family: 'New Tegomin', serif;margin-left: 90px;">Toca el boton para ingresar</p>
+    </ion-fab>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <ion-button class="btnLogin" expand="block" shape="round" (click)="onIntro()">Login</ion-button>
-  <br>
-  <ion-button class="btnSignIn" expand="block" shape="round" (click)="onRegister()">Sign in</ion-button>
-  
 </ion-content>

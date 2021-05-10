@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    
+    background-color: #7545D8;
     color: #fff;
   }
   
@@ -13,7 +13,7 @@
     font-style: arial;
     
     font-weight: 50;
-    font-family: Lato, arial;
+    font-family: 'Josefin Sans', sans-serif;
     ///salida
     -webkit-animation:fade-out 1s ease-out 2s both;
             animation:fade-out 1s ease-out 2s both;
@@ -27,8 +27,8 @@
   
 
   .img{
-    -webkit-animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
-    animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+    -webkit-animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
+    animation: scale-out-vertical 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
   }
 
 ///ANIMACION IMG

@@ -1,3 +1,10 @@
+ion-content{
+  --background: linear-gradient(0deg,rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+  url("../../assets/fondo2.jpg") no-repeat center center / cover;
+
+  background: #6200ea7b;
+}
+
 ion-card{
   *{
     color: white;
@@ -17,7 +24,7 @@ ion-card{
 
   .txtVerificacion{
     font-size: 100%;
-    margin-left: 40%;
+    margin-left: 20%;
   }
 }
 
@@ -52,7 +59,7 @@ ion-grid{
 }
 .textInfo{
   color: white;
-  font-size: 140%;
+  font-size: 105%;
 }
 
 }

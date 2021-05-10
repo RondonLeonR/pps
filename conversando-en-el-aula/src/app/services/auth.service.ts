@@ -10,6 +10,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class AuthService {
 
+  currentUser: any;
   public isLogged: any = false;
 
   constructor(

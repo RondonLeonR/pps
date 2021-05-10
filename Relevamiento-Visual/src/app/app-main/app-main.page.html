@@ -1,0 +1,48 @@
+<ion-content>
+  <!--chart-->
+  <!--grafico-->
+  <h1 *ngIf="currentUser.galery == 'cosasLindas'">Cosas Lindas</h1>
+  <h1 *ngIf="currentUser.galery == 'cosasFeas'">Cosas Feas</h1>
+  <h1 *ngIf="mostrarImagenesDelIngresado==true">Mis Fotos</h1>
+
+  <!--Lista de Imagenes-->
+  <div *ngIf="mostrarImagenesDelIngresado==false">
+    <ion-card *ngFor="let item of this.listaDeImagenes" (click)="mostrarInfo(item)">
+      <img [src]="item.link" alt="imagen tomada" *ngIf="item.usuario!=currentUser.email">
+      <img [src]="item.link" class="bordear" alt="imagen tomada" *ngIf='item.usuario == currentUser.email'>
+    </ion-card>
+  </div>
+  <div *ngIf="mostrarImagenesDelIngresado==true">
+    <ion-card *ngFor="let item of this.listaDeImagenesFiltradasPorUsuario">
+      <img [src]="item.link" alt="imagen tomada" *ngIf="item.usuario!=currentUser.email">
+      <img [src]="item.link" class="bordear" alt="imagen tomada" *ngIf='item.usuario == currentUser.email'>
+    </ion-card>
+  </div>
+  <!--Lista de Imagenes-->
+
+  <!--Detalles-->
+  <ion-card id="imgSeleccionada" *ngIf="imgSeleccionada">
+    <ion-card-header>
+      <ion-badge color="secondary">{{imgSeleccionada.votos}}</ion-badge>
+      <ion-icon id="back" name="arrow-undo-outline" (click)="deseleccionarImagen()"></ion-icon>
+      <ion-title>
+        Autor: {{imgSeleccionada.usuario}}
+      </ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="{{imgSeleccionada.link}}" alt="imagen seleccionada">
+      <p>Fecha: {{imgSeleccionada.fecha | date : 'short'}}</p>
+      <p>Clasificacion: {{imgSeleccionada.tipo}}</p>
+      <p class="link" (click)="toggleFullImg()">Ver en pantalla completa</p>
+      <p id="unLike" title="Votar como mas feo" (click)='votarFotografia("unLike",imgSeleccionada)'>👎</p>
+      <p id="like" title="Votar como mas linda" (click)='votarFotografia("like",imgSeleccionada)'>👍</p>
+    </ion-card-content>
+  </ion-card>
+  <!--Detalles-->
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="danger">
+    <ion-icon (click)="TomarFoto()" name="camera-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

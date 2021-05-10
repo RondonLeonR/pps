@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  styleUrls: ['../login/login.page.scss'],
 })
 export class RegisterPage implements OnInit {
 

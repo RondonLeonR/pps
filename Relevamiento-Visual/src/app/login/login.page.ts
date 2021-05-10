@@ -15,6 +15,14 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginPage implements OnInit {
 
+  users =[
+    {"email":"uno@gmail.com","clave":"123456"},
+    {"email":"jorge@gmail.com","clave":"123456"},
+    {"email":"juan@gmail.com","clave":"123456"},
+    {"email":"admin@gmail.com","clave":"123456"},
+    {"email":"ana@gmail.com","clave":"123456"}
+  ];
+
   constructor(
     private router: Router,
     private authSvc: AuthService,
@@ -33,12 +41,12 @@ export class LoginPage implements OnInit {
 
   public errorMessages = {
     email: [
-      { type: 'required', message: 'Email is required' },
-      { type: 'pattern', message: 'Please enter a valid email' }
+      { type: 'required', message: 'Correo Obligatorio' },
+      { type: 'pattern', message: 'Por favor ingrese un correo valido' }
     ],
     password: [
-      { type: 'required', message: 'Password is required' },
-      { type: 'pattern', message: 'Please enter a valid password' }
+      { type: 'required', message: 'Clave Obligatoria' },
+      { type: 'pattern', message: 'Por favor ingrese una clave valida' }
     ]
   }
 
@@ -58,6 +66,8 @@ export class LoginPage implements OnInit {
     this.user.password = this.password.value;
     const user = await this.authSvc.onLogin(this.user);
     if (user) {
+      this.authSvc.currentUser = this.user;
+
       console.log("Logeado!!");
       this.router.navigateByUrl('/home');
     }
@@ -66,5 +76,11 @@ export class LoginPage implements OnInit {
   public submit() {
     console.log(this.registrationForm.value);
   }
-    ngOnInit(){}
+  ngOnInit() { }
+
+  public LoginFast(id: number) {
+    this.user.email = this.users[id].email;
+    this.user.password = this.users[id].clave;
+
+  }
 }
